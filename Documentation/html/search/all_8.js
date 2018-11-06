@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['setposition',['setPosition',['../class_character.html#aeeced2dfcc027de98e223b4561760fa5',1,'Character']]],
-  ['state',['State',['../class_state.html',1,'State'],['../class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2',1,'State::State()']]],
-  ['statemanager',['StateManager',['../class_state_manager.html',1,'StateManager'],['../class_state_manager.html#a3e2be96d935eb56813b096a885d58587',1,'StateManager::StateManager()']]]
+  ['run',['run',['../class_engine.html#ac1d74c5d25b4fa5dbe9555df92f825bc',1,'Engine']]]
 ];

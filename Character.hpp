@@ -68,25 +68,6 @@ public:
 	*/
 	const sf::Vector2f& getPosition() const;
 
-	void MoveUp()
-	{
-		_sprite.move(0, -1);
-	}
-
-	void MoveDown()
-	{
-		_sprite.move(0, 1);
-	}
-
-	void MoveLeft()
-	{
-		_sprite.move(-1, 0);
-	}
-	void MoveRight()
-	{
-		_sprite.move(1, 0);
-	}
-
 protected:
 	/*!
 		\fn void draw(sf::RenderTarget& target, sf::RenderStates states) const

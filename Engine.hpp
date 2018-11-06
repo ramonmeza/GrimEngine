@@ -20,6 +20,7 @@
 #include <string>
 #include <SFML/Graphics.hpp>
 
+#include "InputManager.hpp"
 #include "StateManager.hpp"
 
 class Engine
