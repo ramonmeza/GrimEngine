@@ -1,0 +1,75 @@
+\hypertarget{class_input_manager}{}\section{Input\+Manager Class Reference}
+\label{class_input_manager}\index{Input\+Manager@{Input\+Manager}}
+
+
+Handles input bindings.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_manager_a8be46886da639b26d67181c29dab6d6c}\label{class_input_manager_a8be46886da639b26d67181c29dab6d6c}} 
+\mbox{\hyperlink{class_input_manager_a8be46886da639b26d67181c29dab6d6c}{Input\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_input_manager_af518290877dd183606709d5852db5491}\label{class_input_manager_af518290877dd183606709d5852db5491}} 
+\mbox{\hyperlink{class_input_manager_af518290877dd183606709d5852db5491}{$\sim$\+Input\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_input_manager_ab273491eb52d4e8e592b29fc0a83a854}{bind}} (std\+::string name, sf\+::\+Keyboard\+::\+Key key, std\+::function$<$ void(void)$>$ action)
+\begin{DoxyCompactList}\small\item\em Binds a key to an action and is accessed by a given name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_manager_a1a222ff5d80067251a4e11c35a4cb862}{unbind}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Unbinds a certain action from its action. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_input_manager_a01135fd4977633bdbe61c4a864f0cb54}\label{class_input_manager_a01135fd4977633bdbe61c4a864f0cb54}} 
+void \mbox{\hyperlink{class_input_manager_a01135fd4977633bdbe61c4a864f0cb54}{process\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if any binding key has been pressed and performs the related action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles input bindings. 
+
+The \mbox{\hyperlink{class_input_manager}{Input\+Manager}} class handles mapping keys to specific actions in the game. It makes it simple to add custom key bindings for actions in-\/game. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_manager_ab273491eb52d4e8e592b29fc0a83a854}\label{class_input_manager_ab273491eb52d4e8e592b29fc0a83a854}} 
+\index{Input\+Manager@{Input\+Manager}!bind@{bind}}
+\index{bind@{bind}!Input\+Manager@{Input\+Manager}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Input\+Manager\+::bind (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{std\+::function$<$ void(void)$>$}]{action }\end{DoxyParamCaption})}
+
+
+
+Binds a key to an action and is accessed by a given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Specifier for the binding \\
+\hline
+{\em key} & Key to be bound \\
+\hline
+{\em action} & Callback function to be executed when bound key is pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_input_manager_a1a222ff5d80067251a4e11c35a4cb862}\label{class_input_manager_a1a222ff5d80067251a4e11c35a4cb862}} 
+\index{Input\+Manager@{Input\+Manager}!unbind@{unbind}}
+\index{unbind@{unbind}!Input\+Manager@{Input\+Manager}}
+\subsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily bool Input\+Manager\+::unbind (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Unbinds a certain action from its action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Binding name to be unbound \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Input\+Manager.\+hpp\item 
+Input\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{class_state_manager}{}\section{State\+Manager Class Reference}
+\label{class_state_manager}\index{State\+Manager@{State\+Manager}}
+
+
+Acts as a wrapper to std\+::stack.  
+
+
+
+
+{\ttfamily \#include $<$State\+Manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_manager_a3e2be96d935eb56813b096a885d58587}\label{class_state_manager_a3e2be96d935eb56813b096a885d58587}} 
+\mbox{\hyperlink{class_state_manager_a3e2be96d935eb56813b096a885d58587}{State\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_manager_a05a43504a033f1befad5c5118249ec6f}\label{class_state_manager_a05a43504a033f1befad5c5118249ec6f}} 
+\mbox{\hyperlink{class_state_manager_a05a43504a033f1befad5c5118249ec6f}{$\sim$\+State\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_state}{State}} $\ast$ \mbox{\hyperlink{class_state_manager_a76446362726ceb518445e2bdd4814be4}{Current\+State}} ()
+\begin{DoxyCompactList}\small\item\em Used to access the current state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_manager_a7c6248e6e74dc09736dcc0ed5a622177}{Push\+State}} (\mbox{\hyperlink{class_state}{State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{class_state}{State}} to the stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_manager_a01cd6f5dafc0add0633b0be231cce665}\label{class_state_manager_a01cd6f5dafc0add0633b0be231cce665}} 
+void \mbox{\hyperlink{class_state_manager_a01cd6f5dafc0add0633b0be231cce665}{Pop\+State}} ()
+\begin{DoxyCompactList}\small\item\em Removes the \mbox{\hyperlink{class_state}{State}} at the top of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Acts as a wrapper to std\+::stack. 
+
+\mbox{\hyperlink{class_state_manager}{State\+Manager}} provides an interface to std\+::stack. It has a stack of \mbox{\hyperlink{class_state}{State}} objects and is able to delete them safely on destruction. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_manager_a76446362726ceb518445e2bdd4814be4}\label{class_state_manager_a76446362726ceb518445e2bdd4814be4}} 
+\index{State\+Manager@{State\+Manager}!Current\+State@{Current\+State}}
+\index{Current\+State@{Current\+State}!State\+Manager@{State\+Manager}}
+\subsubsection{\texorpdfstring{Current\+State()}{CurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_state}{State}} $\ast$ State\+Manager\+::\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to access the current state. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_manager_a7c6248e6e74dc09736dcc0ed5a622177}\label{class_state_manager_a7c6248e6e74dc09736dcc0ed5a622177}} 
+\index{State\+Manager@{State\+Manager}!Push\+State@{Push\+State}}
+\index{Push\+State@{Push\+State}!State\+Manager@{State\+Manager}}
+\subsubsection{\texorpdfstring{Push\+State()}{PushState()}}
+{\footnotesize\ttfamily void State\+Manager\+::\+Push\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Adds a \mbox{\hyperlink{class_state}{State}} to the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the \mbox{\hyperlink{class_state}{State}} object to add to the stack \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State\+Manager.\+hpp\item 
+State\+Manager.\+cpp\end{DoxyCompactItemize}

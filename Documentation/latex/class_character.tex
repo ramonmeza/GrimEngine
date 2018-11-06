@@ -1,0 +1,140 @@
+\hypertarget{class_character}{}\section{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+
+
+Class for generic characters.  
+
+
+
+
+{\ttfamily \#include $<$Character.\+hpp$>$}
+
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_character}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_a9c0bcc7f37b218c920d014bf722037fa}{Character}} (std\+::string texture\+Path)
+\begin{DoxyCompactList}\small\item\em Construct a character with the given texture path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a9e9be564d05ded80962b2045aa70b3fc}\label{class_character_a9e9be564d05ded80962b2045aa70b3fc}} 
+virtual \mbox{\hyperlink{class_character_a9e9be564d05ded80962b2045aa70b3fc}{$\sim$\+Character}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a6e2226e97067453d9d4b131a8e0f9533}\label{class_character_a6e2226e97067453d9d4b131a8e0f9533}} 
+{\footnotesize template$<$typename ... Args$>$ }\\void {\bfseries move} (Args \&\&... args)
+\item 
+{\footnotesize template$<$typename ... Args$>$ }\\void \mbox{\hyperlink{class_character_aeeced2dfcc027de98e223b4561760fa5}{set\+Position}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Move the object by a given offset. \end{DoxyCompactList}\item 
+const sf\+::\+Vector2f \& \mbox{\hyperlink{class_character_aa07e2cfa12d28c14a1843455df396ee6}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a4db2e97c66748b8a9180afff183503cd}\label{class_character_a4db2e97c66748b8a9180afff183503cd}} 
+void {\bfseries Move\+Up} ()
+\item 
+\mbox{\Hypertarget{class_character_ae95e334343aec128bae8598dc112b73c}\label{class_character_ae95e334343aec128bae8598dc112b73c}} 
+void {\bfseries Move\+Down} ()
+\item 
+\mbox{\Hypertarget{class_character_aa977f6130dc475de481d39c543837187}\label{class_character_aa977f6130dc475de481d39c543837187}} 
+void {\bfseries Move\+Left} ()
+\item 
+\mbox{\Hypertarget{class_character_a3ee06ab569d2bacb5f5663de0f80cbd3}\label{class_character_a3ee06ab569d2bacb5f5663de0f80cbd3}} 
+void {\bfseries Move\+Right} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_character_a3812c72bf1cf8090f67a3387b5d96753}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Overrides draw function to draw the current state to the target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_character_ae924928a3fbea152f422fa0ba3e0f8e2}\label{class_character_ae924928a3fbea152f422fa0ba3e0f8e2}} 
+sf\+::\+Texture {\bfseries \+\_\+texture}
+\item 
+\mbox{\Hypertarget{class_character_ab3b89d967b817bc3e199ed70f6b6277a}\label{class_character_ab3b89d967b817bc3e199ed70f6b6277a}} 
+sf\+::\+Sprite {\bfseries \+\_\+sprite}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for generic characters. 
+
+The \mbox{\hyperlink{class_character}{Character}} class is a simple class used to add a character to your game. It contains fundamental functions for controlling the character and displaying them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_character_a9c0bcc7f37b218c920d014bf722037fa}\label{class_character_a9c0bcc7f37b218c920d014bf722037fa}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+Path }\end{DoxyParamCaption})}
+
+
+
+Construct a character with the given texture path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Path} & Path to the texture \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_character_a3812c72bf1cf8090f67a3387b5d96753}\label{class_character_a3812c72bf1cf8090f67a3387b5d96753}} 
+\index{Character@{Character}!draw@{draw}}
+\index{draw@{draw}!Character@{Character}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Character\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Overrides draw function to draw the current state to the target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Render target to draw to \\
+\hline
+{\em states} & Current render states \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_aa07e2cfa12d28c14a1843455df396ee6}\label{class_character_aa07e2cfa12d28c14a1843455df396ee6}} 
+\index{Character@{Character}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Character@{Character}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f \& Character\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of the object. 
+
+\begin{DoxyReturn}{Returns}
+Current position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_character_aeeced2dfcc027de98e223b4561760fa5}\label{class_character_aeeced2dfcc027de98e223b4561760fa5}} 
+\index{Character@{Character}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Character@{Character}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+void Character\+::set\+Position (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the object by a given offset. 
+
+Set the position of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & X, Y offset as two floats or an sf\+::\+Vector2f\\
+\hline
+{\em args} & X, Y coordinates as two floats or an sf\+::\+Vector2f \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Character.\+hpp\item 
+Character.\+cpp\end{DoxyCompactItemize}

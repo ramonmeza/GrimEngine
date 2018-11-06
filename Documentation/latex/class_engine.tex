@@ -1,0 +1,82 @@
+\hypertarget{class_engine}{}\section{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+
+
+Base class for the game being developed.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_afd8c14897778d2d75aac12478c14c9dd}{Engine}} (sf\+::\+Vector2i resolution=sf\+::\+Vector2i(800, 600), std\+::string window\+Name=\char`\"{}Grim\+Engine\char`\"{})
+\begin{DoxyCompactList}\small\item\em Creates the engine instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}} 
+virtual \mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a5e3e4141993d989312f37bde74e8ba2f}\label{class_engine_a5e3e4141993d989312f37bde74e8ba2f}} 
+virtual void \mbox{\hyperlink{class_engine_a5e3e4141993d989312f37bde74e8ba2f}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Used to load the initial state of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_ac1d74c5d25b4fa5dbe9555df92f825bc}{run}} (int min\+F\+PS)
+\begin{DoxyCompactList}\small\item\em Runs the game loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_engine_afd93e6a52301e792650f99043f113cbf}\label{class_engine_afd93e6a52301e792650f99043f113cbf}} 
+sf\+::\+Render\+Window {\bfseries \+\_\+window}
+\item 
+\mbox{\Hypertarget{class_engine_ad300faec8af13f1e98cdadc0012f340c}\label{class_engine_ad300faec8af13f1e98cdadc0012f340c}} 
+\mbox{\hyperlink{class_state_manager}{State\+Manager}} {\bfseries \+\_\+state\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for the game being developed. 
+
+The Game Class is used as a base class for any game that you want to make. It controls the state machine, window, window events, and updating the current state. When you inherit from this class to make your game you must define void \mbox{\hyperlink{class_engine_a5e3e4141993d989312f37bde74e8ba2f}{init()}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_engine_afd8c14897778d2d75aac12478c14c9dd}\label{class_engine_afd8c14897778d2d75aac12478c14c9dd}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{resolution = {\ttfamily sf\+:\+:Vector2i(800,~600)},  }\item[{std\+::string}]{window\+Name = {\ttfamily \char`\"{}GrimEngine\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates the engine instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & Resolution of the game window \\
+\hline
+{\em window\+Name} & Name of the game window \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_ac1d74c5d25b4fa5dbe9555df92f825bc}\label{class_engine_ac1d74c5d25b4fa5dbe9555df92f825bc}} 
+\index{Engine@{Engine}!run@{run}}
+\index{run@{run}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Engine\+::run (\begin{DoxyParamCaption}\item[{int}]{min\+F\+PS }\end{DoxyParamCaption})}
+
+
+
+Runs the game loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+F\+PS} & Represents the minimum F\+PS the game should run at \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine.\+hpp\item 
+Engine.\+cpp\end{DoxyCompactItemize}
